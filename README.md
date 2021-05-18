@@ -1,4 +1,6 @@
-Scripts are provided which enable social scientists to easily retrieve chat data from the service Telegram for a known population on a large scale. Scraping of public as well as private channels and groups is possible as long as group name or invite identification are known. Output is to a .csv-file (optionally SQL).
+Scripts are provided which enable social scientists to easily retrieve chat data from the service Telegram for a known population on a large scale. Scraping of public as well as private channels and groups is possible as long as group name or invite identification are known. Output is to a .csv-file.
+
+These are sample scripts from a larger project of mine which includes some automation as well as SQL integration. I might integrate the framework I use into additional branches some time.
 
 `scrape_public.py` can be used for obtaining chats from public groups which everyone can access and which can be found through Telegram's search engine. `scrape_private.py` can be used to scrape private chats that require an invitation link. The invite link which goes as input into the script is the last part of the link after the `/`.
 
@@ -17,5 +19,3 @@ The scripts require `Python 3` and the [Telethon](https://github.com/LonamiWebs/
 Inputs of the configuration variables `is_invite` and `wave` are just saved to a column of the pd.dataframe and are not mandatory.
 
 For further information on the data retrieved consult the Telethon documentation [here](https://docs.telethon.dev/en/latest/quick-references/events-reference.html) and [here](https://docs.telethon.dev/en/latest/quick-references/objects-reference.html).
-
-These are sample scripts from a larger project of mine which includes some automation as well as SQL integration. I might integrate the framework I use into additional branches some time.
